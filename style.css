@@ -1,0 +1,10 @@
+html, body {
+    background-color: #ffff;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Oswald, Tahoma, sans-serif;
+    color: #242424;
+}
