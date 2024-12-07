@@ -1,5 +1,5 @@
 html, body {
-    background-color: #ffff;
+    background-color: #FAFAFA;
     margin: 0;
     padding: 0;
 }
@@ -7,4 +7,47 @@ html, body {
 body {
     font-family: Verdana, Oswald, Tahoma, sans-serif;
     color: #242424;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #FFFF;
+}
+
+.logo {
+    padding: 0 20px;
+    width: 30%;
+}
+
+.logo-text {
+    margin-right: auto;
+    font-size: 2rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.nav-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.nav-item p {
+    margin: 0;
 }
