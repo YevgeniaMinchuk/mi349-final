@@ -29,6 +29,35 @@ header {
     font-size: 2rem;
 }
 
+#gem {
+    width: 30px;
+    height: 30px;
+}
+
+#gem-small {
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+}
+
+.heart-count{
+    color: #F38E94;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.gem-count {
+    color: #FABC45;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.day-count {
+    color: #F79256;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -82,11 +111,37 @@ header {
     width: 100%;
 }
 
-#menu-items {
+.navigation-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  
+  .menu-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    text-decoration: none;
+    color: #242424;
+    transition: transform 0.2s ease;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-icon {
+    margin-bottom: 0.5rem;
+  }
+  
+  .menu-text {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
 
 .container .row .col {
     text-align: left;
@@ -192,6 +247,11 @@ header {
     font-weight: bolder;
 }
 
+.btn.btn-outline-warning {
+    border-radius: 0.5em;
+    font-weight: bolder;
+    color: #F79256;
+}
 
 
 @media (max-width: 567px) {

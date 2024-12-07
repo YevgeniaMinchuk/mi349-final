@@ -14,14 +14,14 @@
         <ul class="nav justify-content-end">
             <li class="nav-item">
               <img class="icon" src="/images/Union.png">
-              <p>2</p>
+              <p class="heart-count">2</p>
             </li>
             <li class="nav-item">
-              <img class="icon" src="/images/Gem.png">
-              <p>100</p>
+              <img id="gem" class="icon" src="/images/Gem.png">
+              <p class="gem-count">100</p>
             </li>
             <li class="nav-item">
-                <p>D 24</p>
+                <p class="day-count">Day 24</p>
             </li>
         </ul>
     </header>
@@ -44,19 +44,21 @@
                 <img class="line" src="/images/SmallLine.png">
                 <div id="menu" class="container text-center">
                   <div class="row row-cols-1">
-                    <div id="menu-items" class="col">
-                      <div>
-                        <img class="icon" src="/images/HomeIcon.png">
-                        <h3>Home</h3>
-                      </div>
-                      <div>
-                        <img id="menu-items" class="icon" src="/images/FriendsIcon.png">
-                        <h3>Friends</h3>
-                      </div>
-                      <div>
-                        <img id="menu-items" class="icon" src="/images/ProfileIcon.png">
-                        <h3>Profile</h3>
-                      </div>
+                    <div class="col">
+                      <nav class="navigation-menu">
+                        <a href="home.html" class="menu-item">
+                          <img src="/images/HomeIcon.png" alt="Home" class="menu-icon">
+                          <span class="menu-text">HOME</span>
+                        </a>
+                        <a href="friends.html" class="menu-item">
+                          <img src="/images/FriendsIcon.png" alt="Friends" class="menu-icon">
+                          <span class="menu-text">FRIENDS</span>
+                        </a>
+                        <a href="profile.html" class="menu-item">
+                          <img src="/images/ProfileIcon.png" alt="Profile" class="menu-icon">
+                          <span class="menu-text">PROFILE</span>
+                        </a>
+                      </nav>
                     </div>
                   </div>
                 </div>
@@ -88,8 +90,8 @@
                       </li>
                     </ul>
                     <button type="button" class="btn btn-success">Submit</button>
-                    <button type="button" class="btn btn-outline-warning">Hint</button>
               </section>
+              <button type="button" class="btn btn-outline-warning">Hint <p>-10<img id="gem-small" class="icon" src="/images/Gem.png"></p></button>
           </main>
         </div>
       </div>
