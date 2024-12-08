@@ -21,12 +21,9 @@ header {
 
 .logo {
     padding: 0 20px;
-    width: 250px;
-}
-
-.logo-text {
-    margin-right: auto;
-    font-size: 2rem;
+    width: 240px;
+    margin-left: 1em;
+    margin-bottom: 0.6em;
 }
 
 #gem {
@@ -62,7 +59,7 @@ header {
     display: flex;
     align-items: center;
     list-style: none;
-    margin: 0;
+    margin-right: 2em;
     padding: 0;
 }
 
@@ -183,6 +180,8 @@ header {
 
 #previous-topic h4 {
     font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 /** The main trivia section */
@@ -225,8 +224,9 @@ header {
     position: relative;
     text-align: center;
     border-radius: 0.8em;
-    margin: 3px 0;
+    margin: 3px auto;
     padding: 10px 0;
+    min-width: 300px;
 }
 
 .trivia .form-check-label {
@@ -244,7 +244,7 @@ header {
 .form-check-label {
     width: 100%;
     text-align: center;
-    margin-left: 30px; /* Create space for the input */
+    margin-left: 20px;
 }
 
 .btn.btn-success {
@@ -465,21 +465,26 @@ header {
     margin-right: 20px;
 }
 
-/** Responsive design section */
-@media (max-width: 567px) {
+/** 
+* Responsive design section 
+*/
+
+/** Small devices */
+@media (max-width: 585px) {
     header {
         flex-direction: column;
         height: auto;
-        padding: 10px;
+        padding: 20px;
     }
 
     .logo {
-        width: 150px;
+        width: 200px;
         padding: 0;
+        margin: 0 auto;
     }
 
     .nav {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .container {
@@ -505,19 +510,63 @@ header {
     }
 
     .trivia {
-        border-top: 1px solid #e8e8e8;
+        border-top: none;
         padding: 20px;
         margin-top: 20px;
+        height: 800px;
     }
 
-    #topic, #previous-topic {
-        width: 100%;
-        max-width: none;
+    .line {
+        display: none;
     }
+    
+    #topic, #previous-topic {
+        padding: 0.5em 2em;
+        max-width: 500px;
+    }
+
+    #topic {
+        margin-top: 5em;
+    }
+
+    .navigation-menu {
+        background-color: #ffff;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        padding: 0 0;
+        gap: 20px;
+    }
+
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .menu-icon {
+        width: 50px;
+    }
+
+    .menu-icon-profile{
+        width: 40px;
+    }
+
+    .menu-text {
+        display: none;
+    }
+
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (max-width: 967px) {
+/* Medium devices */
+@media (max-width: 960px) {
     .container {
         flex-direction: column;
     }
@@ -527,15 +576,24 @@ header {
         width: 100%;
     }
 
+    .line {
+        display: none;
+    }
+
     #topic, #previous-topic {
-        width: 100%;
+        padding: 0.5em 2em;
         max-width: 500px;
+    }
+
+    #topic {
+        margin-top: 5em;
     }
 
     .trivia {
         border-left: none;
-        border-top: 1px solid #e8e8e8;
-        padding: 2em 1em;
+        padding: 1em 0;
+        height: 700px;
+        margin-top: 20px;
     }
   
     .trivia .list-group {
@@ -543,8 +601,10 @@ header {
     }
 
     .trivia .list-group-item {
-        padding: 10px 1em; /* Added horizontal padding */
+        padding: 10px 1em;
         width: 100%;
+        max-width: 400px;
+        border-radius: 2em;
     }
 
     .col-4, .col-8 {
@@ -560,14 +620,83 @@ header {
         box-sizing: border-box;
     }
 
-    .trivia {
-        border-top: 1px solid #e8e8e8;
-        padding: 20px;
-        margin-top: 20px;
+    .navigation-menu {
+        background-color: #ffff;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        padding: 0 0;
+        gap: 20px;
     }
 
-    #topic, #previous-topic {
-        width: 100%;
-        max-width: none;
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
     }
+
+    .menu-icon {
+        width: 50px;
+    }
+
+    .menu-icon-profile{
+        width: 40px;
+    }
+
+    .menu-text {
+        display: none;
+    }
+
+    /** Profile page */
+
+    #profile-page #topic, #profile-page #previous-topic, #friends-page #topic, #friends-page #previous-topic {
+        display: none;
+    }
+
+    #profile-page .profile-pic {
+        width: 150px;
+    }
+
+    #profile-page #followers-container {
+        width: 150px;
+    }
+
+    #profile-page #followers-container .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5em;
+    }
+    #profile-page .follower-stat {
+        width: 100px;
+    }
+
+    #profile-page .follower-stat h4 {
+        margin: 5px 0;
+    }
+
+    #profile-page .follower-stat p {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    
+    #profile-page #overview .row {
+        max-width: 450px;
+        margin: 3em auto;
+    }
+
+    #overview .overview-stat {
+        padding: 1em 0 0.2em 0;
+        width: 200px;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        border-radius: 1em;
+    }
+
  }
