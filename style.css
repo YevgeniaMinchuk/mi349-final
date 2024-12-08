@@ -125,8 +125,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #242424;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
   }
   
   .menu-item:hover {
@@ -135,11 +134,17 @@ header {
   
   .menu-icon {
     margin-bottom: 0.5rem;
+    width: 4em;
+  }
+
+  .menu-icon-profile {
+    width: 3em;
   }
   
   .menu-text {
+    color: #242424;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 1px;
   }
 
@@ -184,7 +189,6 @@ header {
 
 .trivia {
     border-left: 1px solid #e8e8e8;
-    height: 95%;
     padding: 5em 0;
 }
 
@@ -260,28 +264,41 @@ header {
 
 .profile {
     border-left: 1px solid #e8e8e8;
-    height: 95%;
+    height: 1000px;
     padding: 5em 0;
 }
 
+.profile-pic {
+    width: 215px;
+}
+
+.date-joined {
+    font-size: 12px;
+    color: #7e7e7e;
+}
+
+.profile h2 {
+    margin-top: 1em;
+    font-size: 31px;
+}
+
 #profile-page #followers-container {
-    width: 450px;
+    width: 400px;
 }
 
 #profile-page #followers-container .col {
     border-radius: 1em;
-    margin: 2em 0;
+    margin: 3em 0;
 }
 
 #profile-page #followers-container .row {
-    margin: 2em 0;
+    margin: 1.5em 0;
 }
 
 #followers-container .follower-stat {
-    background-color: #ffff;
     border: solid 1px #f0f0f0;
     border-radius: 1em;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1em;
     font-weight: bold;
 }
 
@@ -295,8 +312,8 @@ header {
 }
 
 .follower-stat p {
-    margin: 0.5rem 0 0;
-    color: #666;
+    margin: 0 0.5rem 0 0;
+    color: #7e7e7e;
     font-size: 0.9rem;
 }
 
@@ -305,29 +322,54 @@ header {
     border-color: #5CAB7D;
     border-radius: 0.8em;
     font-weight: bold;
- }
+    width: 240px;
+    transition: background-color 0.3s ease;
+}
+
+.btn.btn-secondary:hover {
+    background-color: #30774e;
+}
 
 #profile-page #overview .row {
     width: 500px;
     background-color: #e8e8e8;
-    margin: 2em 0;
+    margin: 3em 0;
     border-radius: 1em;
     text-align: left;
-}
-
-#overview .follower-stat {
-    background-color: #ffff;
-    border-radius: 1em;
-    padding: 1rem 1.5rem;
-    font-weight: bold;
-    margin: 0 0 2em 0;
 }
 
 #overview h3 {
     margin: 0.8em 0;
     font-size: 24px;
-    font-weight: bold;
     margin-left: 6.6em;
+}
+
+#overview .overview-stat {
+    padding: 1em 0 0.2em 0;
+    margin: 0 0 2em 0;
+    background-color: #ffff;
+    border-radius: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.overview-stat h4 {
+    margin: 0 auto;
+    color: #242424;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.overview-stat .overview-gems {
+    color: #f5ae2c;
+    font-size: 0.9rem;
+    padding: 3px;
+}
+
+#overview .overview-streak {
+    color: #F79256;
+    font-size: 0.9rem;
+    padding: 3px;
 }
 
 /** 
@@ -335,7 +377,23 @@ header {
 */
 
 .friends-title {
-    margin: 1em;
+    margin: 1em 0;
+    font-size: 30px;
+}
+
+#friend-page-overview {
+    border-left: 1px solid #e8e8e8;
+    height: 1000px;
+    padding: 5em 0;
+}
+
+#friend-page-overview .row{
+    margin: 0 1em;
+}
+
+#friend-page-overview h2 {
+    margin-top: 1em;
+    font-size: 31px;
 }
 
 #friend-list .col-12 {
@@ -346,6 +404,61 @@ header {
     padding: 5px;
 }
 
+#friend-page-overview .friends-profile-pic {
+    width: 145px;
+}
+
+#friend-page-overview .follower-stat {
+    border: solid 1px #f0f0f0;
+    border-radius: 1em;
+    padding: 1rem 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#friend-page-overview .line {
+    width: 90%;
+    height: 1px;
+    margin: 0 4em;
+}
+
+.friends-pic {
+    width: 80px;
+    margin: 10px 20px;
+}
+
+#friend-list .col {
+    margin-top: 2em;
+}
+
+.friend-name {
+    margin: 0;
+    font-size: 24px;
+}
+
+.streak-count-f {
+    margin: auto auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9456;
+}
+
+#friend-list .col {
+    max-width: 500px;
+    border-radius: 1.5em;
+    margin: 20px 0;
+    padding: 5px;
+}
+
+#friend-list .col-10 {
+    margin: 2em 0;
+}
+
+.btn.btn-dark {
+    margin-right: 20px;
+}
+
+/** Responsive design section */
 @media (max-width: 567px) {
     header {
         flex-direction: column;
