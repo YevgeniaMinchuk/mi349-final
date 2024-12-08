@@ -255,7 +255,7 @@ header {
 
 
 /** 
-* Friends Page
+* Profile Page
 */
 
 .profile {
@@ -328,6 +328,22 @@ header {
     font-size: 24px;
     font-weight: bold;
     margin-left: 6.6em;
+}
+
+/** 
+* Friends Page
+*/
+
+.friends-title {
+    margin: 1em;
+}
+
+#friend-list .col-12 {
+    background-color: #e8e8e8;
+    max-width: 500px;
+    border-radius: 1em;
+    margin: 10px 0;
+    padding: 5px;
 }
 
 @media (max-width: 567px) {
