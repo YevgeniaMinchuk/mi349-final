@@ -190,6 +190,7 @@ header {
 .trivia {
     border-left: 1px solid #e8e8e8;
     padding: 5em 0;
+    height: 1000px;
 }
 
 .trivia h2 {
@@ -255,8 +256,14 @@ header {
     border-radius: 0.5em;
     font-weight: bolder;
     color: #F79256;
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
+.btn.btn-outline-warning:hover {
+    color: #ffff;
+    background-color: #F79256;
+}
 
 /** 
 * Profile Page
