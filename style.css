@@ -254,6 +254,82 @@ header {
 }
 
 
+/** 
+* Friends Page
+*/
+
+.profile {
+    border-left: 1px solid #e8e8e8;
+    height: 95%;
+    padding: 5em 0;
+}
+
+#profile-page #followers-container {
+    width: 450px;
+}
+
+#profile-page #followers-container .col {
+    border-radius: 1em;
+    margin: 2em 0;
+}
+
+#profile-page #followers-container .row {
+    margin: 2em 0;
+}
+
+#followers-container .follower-stat {
+    background-color: #ffff;
+    border: solid 1px #f0f0f0;
+    border-radius: 1em;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+}
+
+.follower-stat h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #242424;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.follower-stat p {
+    margin: 0.5rem 0 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.btn.btn-secondary{
+    background-color: #5A9367;
+    border-color: #5CAB7D;
+    border-radius: 0.8em;
+    font-weight: bold;
+ }
+
+#profile-page #overview .row {
+    width: 500px;
+    background-color: #e8e8e8;
+    margin: 2em 0;
+    border-radius: 1em;
+    text-align: left;
+}
+
+#overview .follower-stat {
+    background-color: #ffff;
+    border-radius: 1em;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    margin: 0 0 2em 0;
+}
+
+#overview h3 {
+    margin: 0.8em 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 6.6em;
+}
+
 @media (max-width: 567px) {
     header {
         flex-direction: column;
