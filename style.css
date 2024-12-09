@@ -404,14 +404,6 @@ header {
     font-size: 31px;
 }
 
-#friend-list .col-12 {
-    background-color: #e8e8e8;
-    max-width: 500px;
-    border-radius: 1em;
-    margin: 10px 0;
-    padding: 5px;
-}
-
 #friend-page-overview .friends-profile-pic {
     width: 145px;
 }
@@ -451,14 +443,15 @@ header {
     color: #ff9456;
 }
 
-#friend-list .col-12 {
+#friend-list .col-12.d-flex {
     max-width: 500px;
     border-radius: 1.5em;
     margin: 20px 0;
     padding: 5px;
+    background-color: #e8e8e8;
 }
 
-#friend-list .col-10 {
+#friend-list #friends-button {
     margin: 2em 0;
 }
 
