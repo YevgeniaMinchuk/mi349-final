@@ -451,7 +451,7 @@ header {
     color: #ff9456;
 }
 
-#friend-list .col {
+#friend-list .col-12 {
     max-width: 500px;
     border-radius: 1.5em;
     margin: 20px 0;
