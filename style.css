@@ -215,7 +215,7 @@ header {
 }
 
 .trivia .list-group {
-    padding: 1em 0;
+    padding: 2em 0 1em 0;
 }
 
 .trivia .list-group-item {
@@ -224,10 +224,11 @@ header {
     align-items: center;
     position: relative;
     text-align: center;
-    border-radius: 0.8em;
-    margin: 3px auto;
+    border-radius: 2em;
+    margin: 5px auto;
     padding: 10px 0;
-    min-width: 300px;
+    font-size: 18px;
+    min-width: 400px;
 }
 
 .trivia .form-check-label {
