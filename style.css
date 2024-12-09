@@ -446,7 +446,7 @@ header {
 #friend-list .col-12.d-flex {
     max-width: 500px;
     border-radius: 1.5em;
-    margin: 20px 0;
+    margin: 20px 10em;
     padding: 5px;
     background-color: #e8e8e8;
 }
