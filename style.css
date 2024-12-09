@@ -66,7 +66,7 @@ header {
 .nav-item {
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    margin: 0 2em;
 }
 
 .nav-item img {
@@ -471,7 +471,7 @@ header {
 */
 
 /** Small devices */
-@media (max-width: 585px) {
+@media (max-width: 600px) {
     header {
         flex-direction: column;
         height: auto;
@@ -486,6 +486,10 @@ header {
 
     .nav {
         margin-top: 20px;
+    }
+        
+    .nav-item {
+        margin: 0 10px;
     }
 
     .container {
@@ -619,6 +623,10 @@ header {
         margin: 0;
         padding: 20px;
         box-sizing: border-box;
+    }
+
+    .nav-item {
+        margin: 0 10px;
     }
 
     .navigation-menu {
